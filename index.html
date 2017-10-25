@@ -41,7 +41,8 @@
 							<span class="icon-bar"></span>
 						</button>
 						<a class="navbar-brand" href="#topWrap">
-								<img src="assets/img/brand/XMainSolutionsLogo.png" class="brand img-responsive" style="width: 6.6em;margin-top: -1.3rem;margin-left: 10rem;"/>
+							<img src="assets/img/brand/XMainSolutionsLogo.png" class="brand img-responsive hidden-xs" style="width: 6.6em;margin-top: -1.3rem;margin-left: 10rem;"/>
+							<img src="assets/img/brand/XMainSolutionsLogo.png" class="brand img-responsive hidden-sm hidden-md hidden-lg" style="width: 6.6em;margin-top: -7px;"/>
 							<span class="fa-stack fa-lg">
 								<!-- <i class="fa fa-circle fa-stack-2x"></i>
 								<i class="fa fa-mobile fa-stack-1x fa-inverse"></i> -->
@@ -100,7 +101,7 @@
 		<div class="container ">
 				<div class="row ">
 						<div class="col-xs-12">
-							<h2 class="sectionTitle">As Nossas Áreas de Atividades</h2>
+							<h2 class="sectionTitle"><span class="hidden-xs">As Nossas </span>Áreas de Atividades</h2>
 						</div>
 					</div>
 			<div class="row">
@@ -460,6 +461,10 @@ $(document).ready(function() {
 			
 			$(".nav").find(".active").removeClass("active");
    			$(this).parent().addClass("active");
+
+			if(!$(this).parent().closest('li').hasClass('dropdown') & $('.navbar-collapse').hasClass('in')) {
+			  $(".navbar-collapse").collapse('hide');
+			}
 			
 			var target = $(this.hash);
 			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
