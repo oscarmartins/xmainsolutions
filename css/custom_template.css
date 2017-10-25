@@ -552,7 +552,7 @@ footer .social a .fa-inverse {
   }
   
   .slick-slide img {
-	width: 100%;
+	width: 75%;
   }
   
   .slick-slider {
@@ -657,4 +657,9 @@ footer .social a .fa-inverse {
   .slick-arrow.slick-hidden {
 	display: none;
   }
-  
+  .bg-white {
+    background-color: #ffffff !important;
+  }
+  .bg-black {
+    background-color: #000000 !important;
+  }
