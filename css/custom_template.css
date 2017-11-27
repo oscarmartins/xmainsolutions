@@ -219,7 +219,7 @@ h3.sectionTitle {
 
 #aboutWrap {
 	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-bottom: 0;
 }
 #aboutWrap .productFeatures {
 	margin-top: 20px;
