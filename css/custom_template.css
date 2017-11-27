@@ -8,6 +8,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	color: #78ab46;
 	font-family: 'Roboto Condensed',sans-serif;
+	text-transform: uppercase;
 }
 p {
 	line-height: 1.6;
@@ -60,17 +61,17 @@ h3.sectionTitle {
 	/**
 	background: url(../assets/img/80.png);
 	**/
-	background: #020103;
+	background: #ffffff;
 	border: 0 none;
 	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 }
 .navbar-brand {
 	line-height: 1;
-    height: 40px;
-    margin-top: 14px;
-    margin-bottom: 26px;
-    padding: 0;
-    width: 100%;
+	height: 10rem;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	padding: 0;
+	width: 100%;
 	font-size: 40px;
 	letter-spacing: -2px;
 	font-weight: 700;
@@ -102,7 +103,7 @@ h3.sectionTitle {
 	display: block;
 	font-size: 20px;
 	font-weight: 400;
-	padding: 30px 15px;
+	padding: 40px 40px;
 	text-shadow: none;
 }
 .navbar .nav > li > a:hover,
@@ -439,7 +440,7 @@ footer .social a .fa-inverse {
 		font-size: 28px;
 		float: left;
 		margin: 15px 0;
-		width: auto;	
+		width: auto;
 	}
 	.navbar-inverse .navbar-brand .fa-stack {
 		font-size: 22px;
@@ -448,7 +449,7 @@ footer .social a .fa-inverse {
 		float: left;
 	}
 	.jumbotron {
-		padding-top: 100px;
+		padding: none;
 	}
 	.jumbotron .jumboText {
 		text-align: center;
@@ -476,7 +477,7 @@ footer .social a .fa-inverse {
 	}
 	.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
 		float: left;
-		margin: 15px 0 15px 15px;
+		height: 7.5rem;
 	}
 	.navbar-inverse .navbar-nav > li > a {
 		font-size: 14px;
@@ -535,7 +536,8 @@ footer .social a .fa-inverse {
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	z-index: 1500;
 }
 #return-to-top:hover {
     background: rgba(0, 0, 0, 0.9);
@@ -611,11 +613,6 @@ footer .social a .fa-inverse {
   .slick-arrow.slick-hidden {
 	display: none;
   }
- 
-
-
-
-
   .bg-white {
     background-color: #ffffff !important;
   }
@@ -630,4 +627,21 @@ footer .social a .fa-inverse {
 
 .navbar .navbar-collapse {
     text-align: center;
+}
+
+img.brand{
+	max-height: 100%!important;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus{
+	color:#428BCA!important;
+    background-color: transparent!important;
+}
+@media only screen and (max-width: 1200px) and (min-width: 980px)  {
+	.nav.navbar-nav{
+		position: absolute!important;
+		right: 0!important;
+	}
+	.navbar-inverse .navbar-nav > li > a {
+		padding: 40px 20px!important;
+	}
 }
