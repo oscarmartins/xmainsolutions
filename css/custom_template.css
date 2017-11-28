@@ -523,7 +523,8 @@ footer .social a .fa-inverse {
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	z-index: 1080;
 }
 #return-to-top i {
     color: #fff;
@@ -537,7 +538,6 @@ footer .social a .fa-inverse {
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
-	z-index: 1500;
 }
 #return-to-top:hover {
     background: rgba(0, 0, 0, 0.9);
